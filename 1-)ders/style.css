@@ -1,0 +1,5 @@
+.title-1 {
+  font-size: 80px;
+  background-color: #cb0404 !important;
+  /* Bootstrap css'i ve kendi css'imiz çakıştığında kendi css'imizin geçerli olması için verilen still özelliğinin sonuna !important eklenir.Bu sayede gerçekleşen still çakışması engellenir. */
+}

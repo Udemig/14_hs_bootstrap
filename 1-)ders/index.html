@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- * Bootstrap Css Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- * Custom Css Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- * Bootstrap html,css ve js kodlarından oluşan açık kaynaklı bir frontend kütüphanesidir.Bu kütüphane ile hızlı bir şekilde responsive web siteleri oluşturabiliriz.Bootstrap css'de bulunan özellikleri birer class ile eşlemiştir.Ör display:flex ->d-flex,margin->m,...
+    Bu eşleme ile html elemanlarına bu bootstrap classını vererek stillendirme
+    işlemini çok daha kolay şekilde yapabiliriz.
+    
+    
+    Html dosyası ve bootstrap i eşlemek için bootstrap cdn bağlantısı kullanılır.Bu cdn bağlantısı Html head kısmına yapıştırılmalıdır.
+
+    Eğer bootstrap css'i ve kendi css'imiz bir arada kullanılacaksa kendi css link'imiz daha aşağıda olmalıdır.
+    
+
+    Bootstrap içerisinde belirli bir uzunluk birimi bulunmaktadır.Bu ölçü birim bizi kısıtlasada temel stillendirme için işimizi görür.Eğer detay stillendirme yapılacaksa bunu css ile yaparız.
+
+    0 ==> 0rem
+    1 ==> 0.25 rem (4px)
+    2 ==> 0.5 rem (8px)
+    3 ==> 1 rem (16px)
+    4 ==> 1.5 rem (24px)
+    5 ==> 3 rem (48px)
+    
+    -->
+
+    <!-- Bootstrap'de
+     
+    Arkaplan -> bg ile ifade edilir.
+    Belirli renkler ise primary,secondary,danger,warning,info,... isimler ile eşlenmiştir.
+
+    margin -> m
+    padding -> p
+    color -> text-[renkAdı]
+    border için -> border classı border'ı aktif etmek için kullanılır // border-[1--5] border'ın kalınlığını belirlemek için kullanılır // border-[renkAdı] border'ın rengini belirlemek için kullanılır.
+
+    font-size -> fs-[1--6]
+    
+    width -> w-[100//75//50//25]
+
+    height -> h-[100//75//50//25]
+    -->
+    <h1
+      class="bg-danger m-4 p-2 text-white border border-5 border-warning title-1"
+    >
+      Hello,World !!
+    </h1>
+
+    <h2 class="bg-warning p-3 w-75">Bootstrap Nedir?</h2>
+    <!-- * Js Connection -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

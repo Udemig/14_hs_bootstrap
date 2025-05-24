@@ -51,7 +51,37 @@
     width -> w-[100//75//50//25]
 
     height -> h-[100//75//50//25]
+
+    opacity -> opacity-[0--100]
+
+    overflow -> overflow-[hidden // auto]
+
+
+    pozisyonlama yapılırken kapsayıcı olacak elemana position-relative child elemana ise position-absolute  verilir.Sonrasında toop,bottom,left,right diyerek kapsam içerisindeki eleman konumlandırılır.Fakat bu hizalama 50-100 gibi değerler aldığından dolayı detay bir pozizyonlama için kendi css'imizi kullanırız.
+
+    border -> Bir elemanın etrafına border çizmek için border classı kullanılır.Border dedikten sonra ilgili border'ın hangi yönde verileceğini border-top,border-bottom,border-start,border-end diyerek belirtiriz.Eğer border rengini özelleştirmek istiyorsak border-[renkAdı] şeklinde özelleştirme yapabiliriz.
+
+
+    flexBox -> Flexbox'ı aktif etmek için d-flex classı kullanılır.Flexbox aktif edildikten sonra flexbox'ın yönünü belirlemek için flex-row veya flex-column classları kullanılabilir.Flexbox içerisindeki elemanların nasıl hizalanacağını belirlemek için justify-content-[space-between // space-around // space-evenly // center // star // end] classlarını kullanabiliriz.
     -->
+
+    <div class="p-2 d-flex justify-content-center">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item">
+            <a class="page-link" href="/index.html">Home</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/about.html">About</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/product.html">Product</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
     <h1
       class="bg-danger m-4 p-2 text-white border border-5 border-warning title-1"
     >
@@ -59,6 +89,91 @@
     </h1>
 
     <h2 class="bg-warning p-3 w-75">Bootstrap Nedir?</h2>
+
+    <p class="bg-info w-50 m-3 p-2 text overflow-hidden shadow-lg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+      similique maxime voluptate eum tempora possimus eos fuga nulla libero
+      necessitatibus officiis. Vitae doloremque, quae minima voluptatum autem
+      laboriosam atque dolorum! Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Cumque, similique maxime voluptate eum tempora possimus
+      eos fuga nulla libero necessitatibus officiis. Vitae doloremque, quae
+      minima voluptatum autem laboriosam atque dolorum! Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Cumque, similique maxime voluptate eum
+      tempora possimus eos fuga nulla libero necessitatibus officiis. Vitae
+      doloremque, quae minima voluptatum autem laboriosam atque dolorum!
+    </p>
+
+    <div class="bg-dark p-4 w-75 m-auto d-flex justify-content-between">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+    </div>
+
+    <div class="d-flex m-3 gap-2 flex-wrap bg-warning p-2">
+      <!-- Card -->
+      <div class="card" style="width: 18rem">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="card" style="width: 18rem">
+        <img src="https://picsum.photos/201" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-danger">Go somewhere</a>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="card" style="width: 18rem">
+        <img src="https://picsum.photos/202" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-success">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown m-2">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Eğitimler
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Frontend</a></li>
+        <li><a class="dropdown-item" href="#">Backend</a></li>
+        <li><a class="dropdown-item" href="#">React Native</a></li>
+      </ul>
+    </div>
+
+    <div class="m-4 p-2 d-flex justify-content-center">
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <div class="p-3">
+      <span class="badge text-bg-secondary title">New</span>
+    </div>
     <!-- * Js Connection -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

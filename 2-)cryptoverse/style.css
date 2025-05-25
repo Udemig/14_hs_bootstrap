@@ -46,18 +46,18 @@ header #menu-icon {
   color: #ccc;
 }
 
-/* * Home */
-.home .carousel-item {
+/* *Home */
+#home .carousel-item {
   position: relative;
 }
-.home .carousel-item::before {
+#home .carousel-item::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.399));
 }
-.home .carousel-item img {
+#home .carousel-item img {
   height: 80vh !important;
   object-fit: cover;
 }
@@ -81,6 +81,125 @@ header #menu-icon {
   font-size: 1.2rem !important;
 }
 
+/* Popular Cryptos */
+.section-card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.section-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.section-card .icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1.5rem;
+}
+.section-card .icon i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.section-card .card-title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.section-card .card-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* * Features */
+#features {
+  background-color: var(--light-bg);
+}
+
+/* Testimonials */
+#user-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.fa-star {
+  color: #fdc106;
+}
+
+.section-card {
+  position: relative;
+}
+.section-card .icons {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* * News */
+#news {
+  background-color: var(--light-bg);
+}
+.news-card {
+  border: none;
+  border-radius: 20px !important;
+  cursor: pointer;
+}
+.news-card .news-image {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0 !important;
+  position: relative;
+}
+.news-card .news-category {
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+.news-card .news-image img {
+  transition: all 0.5s;
+}
+/* .news-card elemanına hover olunduğunda img'in scale değerini 1.1 olacak şekilde düzenle  */
+.news-card:hover .news-image img {
+  transform: scale(1.1);
+}
+
+/* * Contact */
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+#info-item-icon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+form textarea {
+  resize: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+#footer-icon {
+  color: var(--secondary-color);
+}
 @media (max-width: 768px) {
   header .navbar {
     padding: 1rem;
